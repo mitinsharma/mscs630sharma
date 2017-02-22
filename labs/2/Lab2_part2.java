@@ -14,11 +14,11 @@ import java.util.Scanner;
 public class Lab2_part2 {
   private static Scanner in;
   public static void main(String[] args) {
-	Lab2_part2 l = new Lab2_part2();
+    Lab2_part2 l = new Lab2_part2();
     System.out.printf("How many lines you want to enter: ");
     in = new Scanner(System.in);        
-	String[] input = new String[in.nextInt()];
-	for (int i = 0; i < input.length; i++) {
+    String[] input = new String[in.nextInt()];
+    for (int i = 0; i < input.length; i++) {
       System.out.print("\nEnter value of x: ");
       long x = in.nextLong();
       System.out.print("\nEnter value of y: ");
@@ -30,7 +30,7 @@ public class Lab2_part2 {
       else {
     	System.out.print("Error: x should be greater than y, and both should be nonzero.1");
       }
-	}
+    }
   }
   /**
    * gcd
@@ -44,8 +44,8 @@ public class Lab2_part2 {
    */
   public long gcd(long x, long y) {
     if(y == 0) {
-	  return x;
-	}
+      return x;
+    }
     return gcd(y,x%y);
   }
   /**
@@ -75,7 +75,7 @@ public class Lab2_part2 {
     }
     result[1]=lx;
     result[2]=ly;
-	return result;
+    return result;
   }
 }
 
