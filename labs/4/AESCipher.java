@@ -23,7 +23,7 @@ public class AESCipher {
     int[][] hexMatrix = new int[4][4];
     String[] returnArray = new String[11];
     returnArray[0] = inputKey;
-
+    
     for(int round = 1; round < 11; round++) {
       String hexOut = "";
       int begin = 0;
@@ -64,7 +64,7 @@ public class AESCipher {
             hexOut += String.format("%02x", curColumn[i]);
           }
         }
-		else {
+	else {
           for (int i = 0; i < curColumn.length; i++) {
             curColumn[i] = curColumn[i] ^ fc[i];
             hexOut += String.format("%02x", curColumn[i]).toUpperCase();
