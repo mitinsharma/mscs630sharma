@@ -23,15 +23,15 @@ public class DriverAES {
   */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-	System.out.print("Input : ");
-	while (scan.hasNext()) {
-	  String KeyHex = scan.nextLine();
-	  String[] res = AESCipher.aesRoundKeys(KeyHex);
-	  for (String a : res) {
-	    System.out.println(a);
-	  }
-	  System.out.println();
-	}
-	scan.close();
+    System.out.print("Input : ");
+    while (scan.hasNext()) {
+      String KeyHex = scan.nextLine();
+      String[] res = AESCipher.aesRoundKeys(KeyHex);
+      for (String a : res) {
+        System.out.println(a);
+      }
+      System.out.println();
+    }
+    scan.close();
   }
 }
