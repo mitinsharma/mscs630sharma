@@ -72,6 +72,6 @@ public class Lab1 {
     for (int i = 0; i < plainText.length(); i++){
       num[i] = new String(logic).indexOf(plainText.charAt(i));
     }
-  return num;
+    return num;
   }
 }
