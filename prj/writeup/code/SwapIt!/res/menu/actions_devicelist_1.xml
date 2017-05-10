@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/history"
+          android:icon="@drawable/ab_history"
+          android:title="Chat History"
+          android:showAsAction="always" />
+    <item android:id="@+id/group"
+          android:icon="@drawable/ab_group"
+          android:title="Refresh"
+          android:showAsAction="always" />
+</menu>

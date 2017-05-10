@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chatwall" >
+
+    <LinearLayout
+        android:id="@+id/chatbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#E6E6E6"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="3dp"
+            android:background="@null"
+            android:src="@drawable/mic" />
+
+		<EditText
+            android:id="@+id/chatmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:inputType="textMultiLine"
+            android:lines="1"
+            android:maxLines="3"
+            android:layout_weight="1" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="3dp"
+            android:background="@null"
+            android:onClick="sendText"
+            android:src="@drawable/send" />
+	</LinearLayout>
+
+    <ListView
+        android:id="@+id/chatview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chatbox"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+</RelativeLayout>
